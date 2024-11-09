@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
+.card-container {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para apilar las filas */
+  align-items: center; /* Centramos el contenido horizontalmente */
+  gap: 20px; /* Espacio entre las filas */
+}
+
+.card-row {
+  display: flex;
+  justify-content: center; /* Centrar las tarjetas en la fila */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+  background-color: #ffffff; /* Color de fondo de la tarjeta */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ocultar el desbordamiento */
+  width: 250px; /* Ancho fijo para las tarjetas */
+  transition: transform 0.3s;
+}
+
+.image-container {
+  height: 100px; /* Altura del contenedor de la imagen */
+  overflow: visible; /* Permitir que la imagen sobresalga */
+  background-color: #3659b9fd; /* Color de fondo azul */
+  display: flex; /* Usar flexbox para centrar la imagen */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  position: relative; /* Para manejar la posición de la imagen */
+}
+
+.circular-image {
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+  border-radius: 50%; /* Hacer la imagen circular */
+  object-fit: cover; /* Asegurar que la imagen cubra el área */
+  border: 5px solid #2e65dbdc; /* Borde azul */
+  position: absolute; /* Posición absoluta para permitir sobresalir */
+  top: 60%; /* Alinear verticalmente para sobresalir más */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centrar la imagen y permitir que la parte inferior sobresalga */
+}
+
+.icon-container {
+  display: flex; /* Usar flexbox para disposición vertical */
+  flex-direction: column; /* Disposición vertical */
+  align-items: flex-end; /* Alinear íconos a la derecha */
+  position: absolute; /* Posición absoluta */
+  right: 10px; /* Espacio desde el lado derecho */
+  top: 10px; /* Espacio desde la parte superior */
+  margin: 0; /* Quitar margen alrededor */
+}
+
+.icon {
+  color: #e0d4d44b; /* Color inicial de los íconos */
+  font-size: 1.1rem; /* Tamaño de los íconos */
+  transition: color 0.3s; /* Transición suave del color */
+}
+
+.icon:hover {
+  color: #ffffffab; /* Color del ícono al pasar el mouse */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.card-title {
+  margin: 15px 0;
+  font-size: 1rem;
+  text-align: center; /* Centrar el texto del título */
+  color: #333; /* Color del texto del título */
+  font-weight: bold; /* Negrita para el título */
+}
+
+.card-description {
+  margin: 0 0 15px;
+  padding: 0 15px; /* Espaciado interno para el texto */
+  color: #666; /* Color del texto de la descripción */
+  font-style: italic; /* Estilo en cursiva para la descripción */
+}
+
+.rating {
+  text-align: center; /* Centrar las estrellas */
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #ffd700; /* Color dorado para las estrellas */
+  font-size: 1.9rem; /* Tamaño de las estrellas */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 15px 15px; /* Margen para el botón */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Efecto al pasar el mouse sobre el botón */
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff5722; /* Color del texto */
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "Arial", sans-serif; /* Fuente de texto */
+  animation: bounce 1.5s ease-in-out infinite; /* Animación de rebote */
+}
+
+/* Efecto de rebote suave */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+/* xdddddddddddd */
+
+.center {
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  align-items: center;
+  font-size: 24px;
+  width: 115%; /* Ajusta el ancho del contenedor según tus necesidades */
+}
+
+.btn-1 {
+  margin-left: 0; /* Alinea el botón a la izquierda */
+}
+
+.btn-2 {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Created by http://grohit.com/  */
+footer a,
+.btn-1 a,
+.btn-2 a {
+  text-decoration: none;
+  border: 2px solid #2137df;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+/* Button 1 styles */
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before,
+.btn-2 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+/* Created by http://grohit.com/  */
+
+.btn-1 a:hover::after,
+.btn-2 a:hover::after {
+  transform: scaleX(0);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logos como Botones</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .logo-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 0 10px;
+      }
+      /* Estilos para el título */
+      .logo-title {
+        font-family: Vegur, "PT Sans", Verdana, sans-serif;
+        font-size: 24px;
+        color: #333;
+        transition: color 0.3s ease, transform 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .logo-title:hover {
+        color: #4caf50; /* Cambia el color al pasar el ratón */
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+      }
+
+      .logo-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .logo-row a {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .logo-image {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        transition: transform 0.2s;
+      }
+      .logo-image:hover {
+        transform: scale(1.1);
+      }
+      /* Adaptación para pantallas medianas */
+      @media (max-width: 768px) {
+        .logo-image {
+          width: 100px;
+        }
+      }
+      /* Adaptación para pantallas pequeñas */
+      @media (max-width: 480px) {
+        .logo-image {
+          width: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <h2 class="logo-title">Fila 1</h2>
+      <div class="logo-row">
+        <a href="https://ejemplo.com/logo1" target="_blank"
+          ><img class="logo-image" src="logos/logo1.png" alt="Logo 1"
+        /></a>
+        <a href="https://ejemplo.com/logo2" target="_blank"
+          ><img class="logo-image" src="logos/logo2.png" alt="Logo 2"
+        /></a>
+        <a href="https://ejemplo.com/logo3" target="_blank"
+          ><img
+            class="logo-image"
+            src="https://via.placeholder.com/150?text=Logo+3"
+            alt="Logo 3"
+        /></a>
+        <a href="https://ejemplo.com/logo4" target="_blank"
+          ><img class="logo-image" src="logos/logo4.png" alt="Logo 4"
+        /></a>
+        <a href="https://ejemplo.com/logo5" target="_blank"
+          ><img
+            class="logo-image"
+            src="https://via.placeholder.com/150?text=Logo+5"
+            alt="Logo 5"
+        /></a>
+        <a href="https://ejemplo.com/logo6" target="_blank"
+          ><img class="logo-image" src="logos/logo6.png" alt="Logo 6"
+        /></a>
+      </div>
+
+      <h2 class="logo-title">Fila 2</h2>
+      <div class="logo-row">
+        <a href="https://ejemplo.com/logo7" target="_blank"
+          ><img class="logo-image" src="logos/logo7.png" alt="Logo 7"
+        /></a>
+        <a href="https://ejemplo.com/logo8" target="_blank"
+          ><img class="logo-image" src="logos/logo8.png" alt="Logo 8"
+        /></a>
+        <a href="https://ejemplo.com/logo9" target="_blank"
+          ><img class="logo-image" src="logos/logo9.png" alt="Logo 9"
+        /></a>
+        <a href="https://ejemplo.com/logo10" target="_blank"
+          ><img
+            class="logo-image"
+            src="https://via.placeholder.com/150?text=Logo+10"
+            alt="Logo 10"
+        /></a>
+        <a href="https://ejemplo.com/logo11" target="_blank"
+          ><img class="logo-image" src="logos/logo11.png" alt="Logo 11"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logos como Botones</title>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en filas en pantallas pequeñas */
+        margin-bottom: 20px;
+      }
+      .row a {
+        display: inline-block;
+      }
+      .row img {
+        width: 250px; /* Tamaño predeterminado en pantallas grandes */
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        transition: transform 0.2s;
+      }
+      .row img:hover {
+        transform: scale(1.1);
+      }
+      /* Adaptación para pantallas pequeñas */
+      @media (max-width: 768px) {
+        .row img {
+          width: 100px; /* Tamaño reducido para pantallas móviles */
+        }
+      }
+      @media (max-width: 480px) {
+        .row img {
+          width: 80px; /* Tamaño aún más pequeño para teléfonos */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>ENFERMERIA TECNICA:</h2>
+      <div class="row">
+        <a href="http://diocesisdehuanuco.com/" target="_blank"
+          ><img src="imagenes_convenio/diocesisdehuanuco.png" alt="Logo 1"
+        /></a>
+        <a href="" target="_blank"
+          ><img src="imagenes_convenio/sanjose.png" alt="Logo 2"
+        /></a>
+        <a href="" target="_blank"
+          ><img
+            src="imagenes_convenio/casaabueloscochachinche.png"
+            alt="Logo 3"
+        /></a>
+        <a href="https://ahora.com.pe/" target="_blank"
+          ><img src="imagenes_convenio/clinicaroca.png" alt="Logo 4"
+        /></a>
+      </div>
+      <div class="row">
+        <a href="" target="_blank"
+          ><img src="imagenes_convenio/clinicohiperium.png" alt="Logo 5"
+        /></a>
+        <a href="https://www.rishuamalies.gob.pe/" target="_blank"
+          ><img src="imagenes_convenio/saludhumalies.png" alt="Logo 6"
+        /></a>
+        <a href="http://redambo.regionhuanuco.gob.pe/" target="_blank"
+          ><img src="imagenes_convenio/redsaludambo.png" alt="Logo 7"
+        /></a>
+        <a
+          href="https://www.gob.pe/regionhuanuco-rsleoncioprado"
+          target="_blank"
+          ><img src="imagenes_convenio/redleoncioprado.png" alt="Logo 8"
+        /></a>
+      </div>
+      <h2>MECANICA DE PRODUCCION</h2>
+      <div class="row">
+        <a href="" target="_blank"
+          ><img src="imagenes_convenio/corporacioncym.png" alt="Logo 7"
+        /></a>
+        <a href="https://ejemplo.com/logo8" target="_blank"
+          ><img src="https://via.placeholder.com/150?text=Logo+10" alt="Logo 8"
+        /></a>
+        <a href="https://ejemplo.com/logo9" target="_blank"
+          ><img src="imagenes_convenio/imaceirl.png" alt="Logo 9"
+        /></a>
+        <a href="https://ejemplo.com/logo10" target="_blank"
+          ><img
+            src="https://via.placeholder.com/150?text=Logo+10"
+            alt="Logo 10"
+        /></a>
+      </div>
+      <h2>INDUSTRIAS ALIMENTARIAS</h2>
+      <div class="row">
+        <a
+          href="https://www.facebook.com/agroind.ord/?locale=es_LA"
+          target="_blank"
+          ><img src="imagenes_convenio/ordoñezsrl.png" alt="Logo 7"
+        /></a>
+        <a href="https://www.andeansuperfood.com/" target="_blank"
+          ><img src="imagenes_convenio/andeansuperfood.png" alt="Logo 8"
+        /></a>
+        <a
+          href="https://www.facebook.com/dolcepiacerehuanuco/?locale=es_LA"
+          target="_blank"
+          ><img src="imagenes_convenio/dolcepiacere.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com/embutidoskavannos/" target="_blank"
+          ><img src="imagenes_convenio/embutidosavannos.png" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="imagenes_convenio/sancarlos.png" alt=""
+        /></a>
+
+        <a
+          href="https://www.facebook.com/Karbelsrl/?locale=es_LA"
+          target="_blank"
+          ><img src="imagenes_convenio/karvel.png" alt=""
+        /></a>
+        <a
+          href="https://www.anunciaenlinea.com/multiservicios_dymal_sociedad_comercial_de_responsabilidad_limitada_1178853"
+          target="_blank"
+          ><img src="" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="https://via.placeholder.com/150?text=Logo+10" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="https://via.placeholder.com/150?text=Logo+10" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="imagenes_convenio/superfoods.png" alt=""
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
